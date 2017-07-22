@@ -1,3 +1,33 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*Crossfader Blog Color Scheme*/
+$black: #000000;
+$lust: #EA161D;
+$white: #ffffff;
+$malibu: #62BFE4;
+/*------------------------*/
+
+.post-title {
+  text-transform: uppercase;
+  font-family: "Rounded-Elegance";
+  color: $white;
+}
+
+.post-body {
+  font-family: sans-serif;
+  color: $white;
+}
+
+.post-date {
+  color: $white;
+}
+
+.show-page {
+  padding-top: 100px;
+}
+
+.logo-heading-show {
+padding-bottom: 100px;
+}

@@ -1,11 +1,26 @@
-<h1 class="title">
-  <%= @post.title %>
-</h1>
+<div class="container show-page">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="logo-heading-show">
+        <img><%= image_tag("cf-blog_logo.svg", alt: "logo-img", height: 720, width: 720) %></img>
+      </div>
+      <div class="panel panel-borderless">
 
-<p class="body">
-  <%= @post.body %>
-</p>
+        <h1 class="post-title">
+          <%= @post.title %>
+        </h1>
+        <br>
+        <p class="post-body">
+          <%= @post.body %>
+        </p>
 
-<p class="date">
-  Posted <%= time_ago_in_words(@post.created_at) %> ago
-</p>
+        <p class="post-date">
+          Posted
+          <%= time_ago_in_words(@post.created_at) %>
+          ago
+        </p>
+
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,6 +1,24 @@
-<% @posts.each do |post| %>
-  <div class="post_wrapper">
-    <h2 class="title"><%= link_to post.title, post %></h2>
-    <p class="date"><%= post.created_at.strftime("%B, %d, %Y") %></p>
+<div class="container home">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="logo-heading">
+        <img><%= image_tag("cf-blog_logo.svg", alt: "logo-img", height: 720, width: 720) %></img>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="panel panel-borderless">
+
+        <% @posts.each do |post| %>
+        <div class="post-index">
+          <h2 class="post-title-index"><%= link_to post.title, post, class: "post-title-index" %></h2>
+          <p class="post-date-index"><%= post.created_at.strftime("%B, %d, %Y") %></p>
+          <hr class="post-separator">
+        </div>
+        <% end %>
+
+      </div>
+    </div>
+
   </div>
-<% end %>
+</div>

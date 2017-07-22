@@ -18,3 +18,113 @@
 @import "font-awesome";
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@font-face {
+  font-family: 'CF-Font';
+  src: font-url('cfFontRemake.ttf');
+  src: font-url('cfFontRemake.ttf?iefix') format('truetype');
+  font-family: 'Rounded-Elegance';
+  src: font-url('Rounded_Elegance.ttf');
+  src: font-url('Rounded_Elegance.ttf?iefix') format('truetype');
+}
+
+/*Crossfader Blog Color Scheme*/
+$black: #000000;
+$lust: #EA161D;
+$white: #ffffff;
+$malibu: #62BFE4;
+/*------------------------*/
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body {
+  display: table;
+  width: 100%;
+  height: auto;
+  text-align: center;
+	background: image-url("cf_blog_home.jpg") no-repeat top center fixed;
+  background-color: $black;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   background-size: cover;
+   -o-background-size: cover;
+ }
+
+.post-index {
+
+}
+
+.post-title-index {
+  text-transform: uppercase;
+  font-family: "Rounded-Elegance";
+  color: $lust;
+}
+
+.post-date-index {
+color: $malibu;
+}
+
+.post-separator {
+
+}
+
+.logo-heading {
+padding-top: 100px;
+padding-bottom: 100px;
+}
+
+.panel-borderless {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*-------------------------------------------------*/
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+/* Small devices (phones) */
+@media (min-width: 300px) and (max-width: 667px) and (orientation: portrait) {
+
+}
+@media (min-width: 300px) and (max-width: 667px) and (orientation: landscape) {
+
+}
+
+/* Small devices (larger phones) */
+@media (min-width: 668px) and (max-width: 767px) and (orientation: portrait) {
+
+}
+@media (min-width: 668px) and (max-width: 767px) and (orientation: landscape) {
+
+}
+
+/* ---------------------------------------------------- */
+/* Medium devices (tablets, 768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+}
+
+/* ---------------------------------------------------- */
+/* Large devices (Laptops (and large resolution tablets), 1025px to 1439px) */
+@media (min-width: 1025px) and (max-width: 1439px) and (orientation: portrait) {
+
+}
+@media (min-width: 1025px) and (max-width: 1439px) and (orientation: landscape) {
+
+}
+
+/* ---------------------------------------------------- */
+/* Large devices (Computers, 1440px to 1979px) */
+@media (min-width: 1440px) and (max-width: 1979px) and (orientation: landscape) {
+
+}
+
+/* ---------------------------------------------------- */
+/* Extra Large devices (Computers, 1980px and up) */
+@media (min-width: 1980px) and (max-width: 3840px) and (orientation: landscape) {
+
+}
+/* ---------------------------------------------------- */
