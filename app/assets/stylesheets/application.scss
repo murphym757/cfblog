@@ -75,10 +75,23 @@ padding-top: 100px;
 padding-bottom: 100px;
 }
 
+.panel-default {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
 .panel-borderless {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+.new-post {
+  text-transform: uppercase;
+  font-family: "Rounded-Elegance";
+  color: $white;
+}
+
+.footer-font {
+  font-family: "Rounded-Elegance";
+}
 /*-------------------------------------------------*/
 /* RESPONSIVE CSS
 -------------------------------------------------- */

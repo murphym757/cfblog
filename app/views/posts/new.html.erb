@@ -1,11 +1,25 @@
-<h2>New Post</h2>
+<div class="container show-page">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="logo-heading-show">
+        <img><%= image_tag("cf-blog_logo.svg", alt: "logo-img", height: 720, width: 720) %></img>
+      </div>
+      <div class="panel panel-borderless">
 
-<%= bootstrap_form_for :post, url: posts_path do |f| %>
-  <p>
-    <%= f.text_field :title, placeholder: "Post Title" %>
-  </p>
-  <p>
-    <%= f.text_area :body, hide_label: true, placeholder: "Write your post here..." %>
-  </p>
-  <%= f.submit "Publish" %>
-<% end %>
+        <h2 class="new-post">New Post</h2>
+        <%= bootstrap_form_for :post, url: posts_path do |f| %>
+          <p>
+            <%= f.text_field :title, placeholder: "Post Title" %>
+          </p>
+          <p>
+            <%= f.text_area :body, hide_label: true, placeholder: "Write your post here..." %>
+          </p>
+
+          <%= f.submit "Publish" %>
+          <br>
+        <% end %>
+
+      </div>
+    </div>
+  </div>
+</div>

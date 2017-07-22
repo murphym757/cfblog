@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Maurice Murphy">
-  
+    <%= favicon_link_tag 'cfblog_icon.png' %>
     <title>Crossfader Blog</title>
     <%= csrf_meta_tags %>
 
@@ -16,5 +16,6 @@
 
   <body>
     <%= yield %>
+     <%= render 'layouts/footer' %>
   </body>
 </html>
