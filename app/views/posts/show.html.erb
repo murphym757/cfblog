@@ -1,6 +1,25 @@
 <div class="container show-page">
   <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+      <div class="panel panel-borderless">
+
+        <h1 class="post-title">
+          <%= @post.title %>
+        </h1>
+        <br>
+        <p class="post-body">
+          <%= @post.body %>
+        </p>
+
+        <p class="post-date">
+          Posted
+          <%= time_ago_in_words(@post.created_at) %>
+          ago
+        </p>
+
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
       <div class="panel panel-borderless">
 
         <h1 class="post-title">

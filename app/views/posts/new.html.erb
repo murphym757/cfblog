@@ -5,6 +5,18 @@
 
         <h2 class="form-title">New Post</h2>
         <%= bootstrap_form_for :post, url: posts_path do |f| %>
+          <% if @post.errors.any? %>
+          <div class="post-errors">
+            <h3>There are <%= pluralize(@post.errors.count, "error") %> in this post. Please correct them and try again.</h3>
+            <ul class="error-bullets">
+              <% @post.errors.full_messages.each do |msg| %>
+              <li class="error-messages">
+                <%= msg %>
+              </li>
+              <% end %>
+            </ul>
+          </div>
+          <% end %>
         <br>
           <p>
             <%= f.text_field :title, hide_label: true, placeholder: "Post title", class: "form-field" %>
