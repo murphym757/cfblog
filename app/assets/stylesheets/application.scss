@@ -18,10 +18,8 @@
 @import "font-awesome";
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
 @font-face {
-  font-family: 'CF-Font';
-  src: font-url('cfFontRemake.ttf');
-  src: font-url('cfFontRemake.ttf?iefix') format('truetype');
   font-family: 'Rounded-Elegance';
   src: font-url('Rounded_Elegance.ttf');
   src: font-url('Rounded_Elegance.ttf?iefix') format('truetype');
@@ -32,6 +30,7 @@ $black: #000000;
 $lust: #EA161D;
 $white: #ffffff;
 $malibu: #62BFE4;
+$cloud: #C7C3C0;
 /*------------------------*/
 
 img {
@@ -45,13 +44,53 @@ body {
   height: auto;
   text-align: center;
 	background: image-url("cf_blog_home.jpg") no-repeat top center fixed;
-  background-color: $black;
-   -webkit-background-size: cover;
-   -moz-background-size: cover;
-   background-size: cover;
-   -o-background-size: cover;
+  background-color: $cloud;
+  background-blend-mode: multiply;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+background-size: cover;
  }
 
+  p,
+  .form-field {
+    font-family: 'Roboto', sans-serif;
+  }
+
+ .form-title {
+   padding-top: 20px;
+   text-transform: uppercase;
+   font-family: "Rounded-Elegance";
+   color: $white;
+ }
+
+ .check-box,
+ .password-confirm {
+   font-family: 'Roboto', sans-serif;
+   color: $white;
+ }
+
+/*Post Show Styling*/
+.post-body {
+  font-family: 'Roboto', sans-serif;
+  color: $white;
+}
+
+.post-title {
+  text-transform: uppercase;
+  font-family: "Rounded-Elegance";
+  color: $white;
+}
+
+.post-date {
+  font-family: 'Roboto', sans-serif;
+  color: $white;
+}
+
+
+/*----------------*/
+
+/*Homepage Styling*/
 .post-index {
 
 }
@@ -62,6 +101,14 @@ body {
   color: $lust;
 }
 
+.post-title-index:hover,
+.post-title-index:focus,
+.post-title-index:active,
+.post-title-index.active {
+  color: $white;
+  text-decoration: none
+}
+
 .post-date-index {
 color: $malibu;
 }
@@ -69,29 +116,182 @@ color: $malibu;
 .post-separator {
 
 }
+/*----------------*/
 
+
+/*Overall Page Styling*/
 .logo-heading {
 padding-top: 100px;
-padding-bottom: 100px;
 }
 
 .panel-default {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba($white, 0.8);
 }
 
 .panel-borderless {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.new-post {
-  text-transform: uppercase;
-  font-family: "Rounded-Elegance";
-  color: $white;
+  background-color: rgba($black, 0.8);
 }
 
 .footer-font {
-  font-family: "Rounded-Elegance";
+  font-family: "Roboto";
+  color:$white;
 }
+
+.footer-icons {
+  color: $malibu;
+}
+.footer-icons:hover,
+.footer-icons:focus,
+.footer-icons:active,
+.footer-icons.active {
+  color: $lust;
+}
+
+.button {
+  font-family: "Rounded-Elegance";
+  padding-bottom: 10px;
+}
+
+.links {
+  color: $malibu;
+  font-family: "Roboto";
+}
+
+.links:hover,
+.links:focus,
+.links:active,
+.links.active {
+  color: $white
+}
+/*-----------------*/
+
+/*Header Styling*/
+.nav.navbar-nav {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+	.navbar-nav {
+		float: none;
+	}
+}
+.navbar-custom {
+  margin-bottom: 0;
+  padding-bottom: 50px;
+  text-transform: uppercase;
+  font-family: "Rounded-Elegance";
+
+  .navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: $white;
+
+    &:active,
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .navbar-brand {
+    font-weight: 700;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  a {
+    color: $white;
+  }
+
+  .nav {
+    li {
+      a {
+        -webkit-transition: background 0.3s ease-in-out;
+        -moz-transition: background 0.3s ease-in-out;
+        transition: background 0.3s ease-in-out;
+
+        &:hover {
+          color: rgba($white, 0.8);
+          outline: none;
+          background-color: transparent;
+        }
+
+        &:active,
+        &:focus {
+          outline: none;
+          background-color: transparent;
+        }
+      }
+
+      &.active {
+        outline: none;
+
+        a {
+          background-color: rgba(white, 0.3);
+
+          &:hover {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*-------------*/
+
+/*Bootstrap Button*/
+.btn-cfb {
+  color: $malibu;
+  text-transform: uppercase;
+  background-color: rgba($black, 0.2);
+  border-color: $lust;
+}
+
+.btn-cfb:hover,
+.btn-cfb:focus,
+.btn-cfb:active,
+.btn-cfb.active,
+.open .dropdown-toggle.btn-cfb {
+  color: $malibu;
+  background-color: $white;
+  border-color: $lust;
+}
+
+.btn-cfb:active,
+.btn-cfb.active,
+.open .dropdown-toggle.btn-cfb {
+  background-image: none;
+}
+
+.btn-cfb.disabled,
+.btn-cfb[disabled],
+fieldset[disabled] .btn-cfb,
+.btn-cfb.disabled:hover,
+.btn-cfb[disabled]:hover,
+fieldset[disabled] .btn-cfb:hover,
+.btn-cfb.disabled:focus,
+.btn-cfb[disabled]:focus,
+fieldset[disabled] .btn-cfb:focus,
+.btn-cfb.disabled:active,
+.btn-cfb[disabled]:active,
+fieldset[disabled] .btn-cfb:active,
+.btn-cfb.disabled.active,
+.btn-cfb[disabled].active,
+fieldset[disabled] .btn-cfb.active {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-color: $lust;
+}
+
+.btn-cfb .badge {
+  color: rgba($black, 0.2);
+  background-color: $malibu;
+}
+/*----------------*/
+
+
 /*-------------------------------------------------*/
 /* RESPONSIVE CSS
 -------------------------------------------------- */

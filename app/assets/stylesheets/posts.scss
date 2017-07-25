@@ -10,6 +10,7 @@ $malibu: #62BFE4;
 /*------------------------*/
 
 .post-title {
+  padding-right: 200px;
   text-transform: uppercase;
   font-family: "Rounded-Elegance";
   color: $white;
@@ -21,11 +22,8 @@ $malibu: #62BFE4;
 }
 
 .post-date {
+  padding-left: 200px;
   color: $white;
-}
-
-.show-page {
-  padding-top: 100px;
 }
 
 .logo-heading-show {
