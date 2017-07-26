@@ -1,0 +1,24 @@
+<%= bootstrap_form_for @post do |f| %>
+  <% if @post.errors.any? %>
+  <div class="post-errors">
+    <h3>There are <%= pluralize(@post.errors.count, "error") %> in this post. Please correct them and try again.</h3>
+    <ul class="error-bullets">
+      <% @post.errors.full_messages.each do |msg| %>
+      <li class="error-messages">
+        <%= msg %>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+  <% end %>
+<br>
+  <p>
+    <%= f.text_field :title, hide_label: true, placeholder: "Post title", class: "form-field" %>
+  </p>
+  <p>
+    <%= f.text_area :body, hide_label: true, placeholder: "Write your post here...", class: "form-field" %>
+  </p>
+  <div class="button">
+  <%= f.submit "PUBLISH", class: "btn btn-cfb" %>
+  </div>
+<% end %>
