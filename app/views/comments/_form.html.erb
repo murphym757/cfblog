@@ -1,0 +1,11 @@
+<%= bootstrap_form_for ([@post, @post.comments.build]) do |f| %>
+  <p>
+    <%= f.text_field :username, hide_label: true, placeholder: "Username", class: "form-field" %>
+  </p>
+  <p>
+    <%= f.text_area :body, hide_label: true, placeholder: "Write your comment here...", class: "form-field" %>
+  </p>
+  <div class="button">
+  <%= f.submit "Comment", class: "btn btn-cfb" %>
+  </div>
+<% end %>

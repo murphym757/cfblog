@@ -1,0 +1,12 @@
+<div class="comment clearfix">
+  <div class"comments-content">
+    <p class="comment-username"><%= comment.username %></p>
+    <p class="comment-body"><%= comment.body %></p>
+    <p class="comment-date">Posted <%= time_ago_in_words(comment.created_at) %> ago</p>
+  </div>
+
+  <div class="comment-links">
+    <p><%= link_to 'Delete', [comment.post, comment], method: :delete, class: "btn btn-cfb", data: { confirm: "Are you sure about this?" } %></p>
+</div>
+  <br>
+</div>

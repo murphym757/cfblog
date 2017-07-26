@@ -1,0 +1,39 @@
+// Place all the styles related to the Comments controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*Crossfader Blog Color Scheme*/
+$black: #000000;
+$lust: #EA161D;
+$white: #ffffff;
+$malibu: #62BFE4;
+/*------------------------*/
+
+.comment-username {
+  font-size: 15px;
+  text-align: right;
+  padding-right: 20px;
+  font-family: "Rounded-Elegance";
+  color: $lust;
+}
+
+.comment-body {
+  font-size: 20px;
+  text-align: right;
+  padding-right: 20px;
+  font-family: sans-serif;
+  color: $white;
+}
+
+.comment-date {
+  font-size: 10px;
+  text-align: right;
+  padding-right: 20px;
+  font-family: sans-serif;
+  color: $malibu;
+}
+
+.comment-links {
+  text-align: right;
+  padding-right: 20px;
+}

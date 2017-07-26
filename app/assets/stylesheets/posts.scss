@@ -26,6 +26,17 @@ $malibu: #62BFE4;
   color: $white;
 }
 
+.comments {
+color: $white;
+}
+
+.comment-header,
+.comment-counter {
+  text-transform: uppercase;
+  font-family: "Rounded-Elegance";
+  color: $white;
+}
+
 .logo-heading-show {
 padding-bottom: 100px;
 }
