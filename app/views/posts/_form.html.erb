@@ -12,6 +12,9 @@
   </div>
   <% end %>
 <br>
+  <div class="form-image">
+    <%= image_tag @post.image.url(:medium) %>
+  </div>
   <p>
     <%= f.text_field :title, hide_label: true, placeholder: "Post title...(5 character minimum)", class: "form-field" %>
   </p>
