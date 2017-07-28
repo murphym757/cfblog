@@ -7,6 +7,9 @@
           <%= @post.title %>
         </h1>
         <br>
+        <div class="post-image">
+          <%= image_tag @post.image.url(:medium) %>
+        </div>
         <p class="post-body">
           <%= @post.body %>
         </p>

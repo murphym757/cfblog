@@ -6,6 +6,8 @@
         <% @posts.each do |post| %>
         <div class="post-index">
           <h2 class="post-title-index"><%= link_to post.title, post, class: "post-title-index" %></h2>
+          <div class="post-image-index"><%= image_tag post.image.url(:medium) %></div>
+          <p class="post-body-index"><%= post.body %></p>
           <p class="post-date-index"><%= post.created_at.strftime("%B, %d, %Y") %></p>
           <hr class="post-separator">
         </div>

@@ -98,6 +98,8 @@ body {
 .post-title-index {
   text-transform: uppercase;
   font-family: "Rounded-Elegance";
+  text-decoration: underline;
+  text-decoration-color: $malibu;
   color: $lust;
 }
 
@@ -106,7 +108,12 @@ body {
 .post-title-index:active,
 .post-title-index.active {
   color: $white;
-  text-decoration: none
+  text-decoration: none;
+}
+
+.post-body-index {
+  padding: 20px;
+  color: $white;
 }
 
 .post-date-index {
@@ -118,6 +125,9 @@ color: $malibu;
 }
 /*----------------*/
 
+.upload-button {
+  color: $white;
+}
 
 /*Overall Page Styling*/
 .logo-heading {
