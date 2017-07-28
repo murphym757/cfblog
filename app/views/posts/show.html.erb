@@ -27,7 +27,7 @@
         <div class="comments">
           <h3 class="comment-counter"><%= pluralize(@post.comments.count, "Comment") %></h3>
           <%= render @post.comments %>
-          
+
           <h3 class="comment-header">Comments</h3>
           <%= render "comments/form" %>
         </div>
