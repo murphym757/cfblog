@@ -52,6 +52,12 @@ body {
   background-size: cover;
  }
 
+  .username-styling {
+    text-transform: uppercase;
+    font-family: "Rounded-Elegance";
+    color: $white;
+  }
+
   p,
   .form-field {
     font-family: 'Roboto', sans-serif;

@@ -7,6 +7,9 @@
         <%= bootstrap_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
         <%= devise_error_messages! %>
         <br>
+        <p>
+          <%= f.text_field :username, hide_label: true, autofocus: true, placeholder: "Username" %>
+        </p>
           <p>
             <%= f.email_field :email, hide_label: true, autofocus: true, placeholder: "E-mail" %>
           </p>

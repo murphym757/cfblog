@@ -16,7 +16,7 @@
     <%= image_tag @post.image.url(:medium) %>
   </div>
   <p>
-    <%= f.text_field :title, hide_label: true, placeholder: "Post title...(5 character minimum)", class: "form-field" %>
+    <%= f.text_field :title, hide_label: true, placeholder: "Post title...(5 character minimum/110 character maximum)", class: "form-field" %>
   </p>
   <p>
     <%= f.text_area :body, hide_label: true, placeholder: "Write your post here...(750 character limit)", class: "form-field" %>

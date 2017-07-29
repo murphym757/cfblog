@@ -13,7 +13,10 @@
         <p class="post-body">
           <%= @post.body %>
         </p>
-
+        <br>
+        <div class="post-username">
+          <%= @post.user.username %>
+        </div>
         <p class="post-date">
           Posted
           <%= time_ago_in_words(@post.created_at) %>
