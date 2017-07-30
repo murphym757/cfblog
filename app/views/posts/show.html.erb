@@ -29,7 +29,9 @@
           <br>
           <%= link_to 'Edit', edit_post_path(@post), class: "links" %> |<%= link_to ' Delete', post_path(@post), method: :delete, data: { confirm: "Are you sure about this?" },  class: "links" %>
         </p>
-
+        <div class="share-links">
+          <%= social_share_button_tag(@post.title) %>
+        </div>
       </div>
     </div>
     <div class="col-xs col-md-6 col-lg-6">

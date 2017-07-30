@@ -15,6 +15,7 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'aws-sdk', '~> 2.0'
 gem 'font-awesome-sass'
 gem 'bootstrap_form'
+gem 'social-share-button', '~> 0.1.6'
 
 group :development, :test do
   gem 'byebug', platform: :mri
