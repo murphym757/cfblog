@@ -17,6 +17,11 @@
         <div class="post-username">
           <%= @post.user.username %>
         </div>
+        <div class="poster-image">
+          <div class="img-circle">
+            <%= image_tag @post.user.avatar %>
+          </div>
+        </div>
         <p class="post-date">
           Posted
           <%= time_ago_in_words(@post.created_at) %>
