@@ -29,7 +29,10 @@
           <%= time_ago_in_words(@post.created_at) %>
           ago
           <br>
+          <% if user_signed_in? %>
           <%= link_to 'Edit', edit_post_path(@post), class: "links" %> |<%= link_to ' Delete', post_path(@post), method: :delete, data: { confirm: "Are you sure about this?" },  class: "links" %>
+          <% else %>
+          <% end %>
         </p>
         <div class="share-links">
           <%= social_share_button_tag(@post.title) %>

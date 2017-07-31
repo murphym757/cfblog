@@ -124,6 +124,10 @@ body {
   color: $white;
 }
 
+.comments {
+  padding-right: 20px;
+  padding-left: 20px;
+}
 
 /*----------------*/
 
@@ -430,7 +434,7 @@ fieldset[disabled] .btn-cfb.active {
 }
 
 /* Small devices (larger phones) */
-@media (min-width: 400px) and (max-width: 415px) and (orientation: portrait) {
+@media (min-width: 400px) and (max-width: 425px) and (orientation: portrait) {
 
 }
 @media (min-width: 668px) and (max-width: 767px) and (orientation: landscape) {
