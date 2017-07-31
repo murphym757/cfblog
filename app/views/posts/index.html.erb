@@ -10,12 +10,12 @@
           <p class="post-body-index"><%= post.body %></p>
           <div class="post-username"><%= post.user.username %></div>
           <p class="post-date-index"><%= post.created_at.strftime("%B, %d, %Y") %></p>
+
           <hr class="post-separator">
         </div>
         <% end %>
-
+        <%= will_paginate @posts, renderer: BootstrapPagination::Rails, previous_label: "Newest", next_label: "Oldest", inner_window: 1, outer_window: 1 %>
       </div>
     </div>
-
   </div>
 </div>

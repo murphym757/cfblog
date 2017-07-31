@@ -179,6 +179,10 @@ padding-top: 100px;
   background-color: rgba($black, 0.8);
 }
 
+.panel-backgroundless {
+  background-color: rgba($black, 0.0);
+}
+
 .footer-font {
   font-family: "Roboto";
   color:$white;
@@ -302,6 +306,67 @@ padding-top: 100px;
 }
 
 /*-------------*/
+
+/*Bootstrap Pagination*/
+.pagination {
+  text-transform: uppercase;
+  font-family: "Rounded-Elegance";
+}
+
+.pagination > li:first-child > span, .pagination > li:first-child > a {
+    border-bottom-left-radius: 0px  !important;
+    border-top-left-radius: 0px !important;
+    }
+
+.pagination > li:last-child > a, .pagination > li:last-child > span {
+    border-bottom-right-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    }
+
+  .pagination > .active > span {
+    z-index: 5;
+    color: $malibu;
+    background-color: $black;
+    border-color: $lust;
+    cursor: pointer;
+  }
+
+  .pagination > .active > span:hover {
+  background-color: $white;
+  border-color: $lust;
+  color: $malibu;
+  }
+
+.pagination > li > a:hover, .pagination > li > span:hover {
+ background-color: $white;
+ border-color: $lust;
+ color: $malibu;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+
+
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    line-height: 1.428571429;
+    text-decoration: none;
+    color: $malibu;
+    background-color: $black;
+    border-color: $lust;
+    margin-left: 4px;
+}
+
+.pagination > .disabled > span, .pagination > .disabled > span:hover, .pagination > .disabled > span:focus, .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus
+
+{
+    color: $malibu;
+    background-color: $black;
+    border-color: $lust;
+    cursor: not-allowed;
+}
+/*------------*/
 
 /*Bootstrap Button*/
 .btn-cfb {

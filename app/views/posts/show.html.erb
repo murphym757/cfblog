@@ -1,7 +1,8 @@
 <div class="container show-page">
+  <div class="panel panel-borderless">
   <div class="row">
     <div class="col-xs col-md-6 col-lg-6">
-      <div class="panel panel-borderless">
+      <div class="panel panel-backgroundless">
 
         <h1 class="post-title">
           <%= @post.title %>
@@ -10,6 +11,7 @@
         <div class="post-image">
           <%= image_tag @post.image.url(:medium) %>
         </div>
+        <br>
         <p class="post-body">
           <%= @post.body %>
         </p>
@@ -35,7 +37,7 @@
       </div>
     </div>
     <div class="col-xs col-md-6 col-lg-6">
-      <div class="panel panel-borderless">
+      <div class="panel panel-backgroundless">
 
         <div class="comments">
           <h3 class="comment-counter"><%= pluralize(@post.comments.count, "Comment") %></h3>
@@ -47,4 +49,5 @@
       </div>
     </div>
   </div>
+</div>
 </div>
