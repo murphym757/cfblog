@@ -1,5 +1,4 @@
-<div class="container show-page">
-  <div class="panel panel-borderless">
+<div class="panel panel-borderless">
   <div class="row">
     <div class="col-xs col-md-6 col-lg-6">
       <div class="panel panel-backgroundless">
@@ -30,8 +29,9 @@
           ago
           <br>
           <% if user_signed_in? %>
-          <%= link_to 'Edit', edit_post_path(@post), class: "links" %> |<%= link_to ' Delete', post_path(@post), method: :delete, data: { confirm: "Are you sure about this?" },  class: "links" %>
-          <% else %>
+          <%= link_to 'Edit', edit_post_path(@post), class: "links" %>
+          |<%= link_to ' Delete', post_path(@post), method: :delete, data: { confirm: "Are you sure about this?" },  class: "links" %>
+        <% else %>
           <% end %>
         </p>
         <div class="share-links">
@@ -52,5 +52,4 @@
       </div>
     </div>
   </div>
-</div>
 </div>

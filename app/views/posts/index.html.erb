@@ -1,21 +1,19 @@
-<div class="container home">
-  <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      <div class="panel panel-borderless">
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="panel panel-borderless">
 
-        <% @posts.each do |post| %>
-        <div class="post-index">
-          <h2 class="post-title-index"><%= link_to post.title, post, class: "post-title-index" %></h2>
-          <div class="post-image-index"><%= image_tag post.image.url(:medium) %></div>
-          <p class="post-body-index"><%= post.body %></p>
-          <div class="post-username"><%= post.user.username %></div>
-          <p class="post-date-index"><%= post.created_at.strftime("%B, %d, %Y") %></p>
+      <% @posts.each do |post| %>
+      <div class="post-index">
+        <h2 class="post-title-index"><%= link_to post.title, post, class: "post-title-index" %></h2>
+        <div class="post-image-index"><%= image_tag post.image.url(:medium) %></div>
+        <p class="post-body-index"><%= post.body %></p>
+        <div class="post-username"><%= post.user.username %></div>
+        <p class="post-date-index"><%= post.created_at.strftime("%B, %d, %Y") %></p>
 
-          <hr class="post-separator">
-        </div>
-        <% end %>
-        <%= will_paginate @posts, renderer: BootstrapPagination::Rails, previous_label: "Newest", next_label: "Oldest", inner_window: 1, outer_window: 1 %>
+        <hr class="post-separator">
       </div>
+      <% end %>
+      <%= will_paginate @posts, renderer: BootstrapPagination::Rails, previous_label: "Newest", next_label: "Oldest", inner_window: 1, outer_window: 1 %>
     </div>
   </div>
 </div>

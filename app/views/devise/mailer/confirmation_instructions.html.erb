@@ -1,15 +1,14 @@
-<div class="container show-page">
-  <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      <div class="panel panel-borderless">
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="panel panel-borderless">
 
-        <h2 class="form-title">Welcome <%= @email %>!</h2>
-        <br>
-        <p>You can confirm your account email through the link below:</p>
+      <h2 class="form-title">Welcome
+        <%= @email %>!</h2>
+      <br>
+      <p>You can confirm your account email through the link below:</p>
 
-        <p><%= link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token) %></p>
+      <p><%= link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token) %></p>
 
-      </div>
     </div>
   </div>
 </div>
