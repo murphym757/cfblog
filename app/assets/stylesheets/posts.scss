@@ -2,30 +2,33 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-/*Crossfader Blog Color Scheme*/
+/*Crossfader Blog Scheme*/
 $black: #000000;
 $lust: #EA161D;
 $white: #ffffff;
 $malibu: #62BFE4;
+$cloud: #C7C3C0;
+$roboto-sans: 'Roboto', sans-serif;
+$crossfader-font: "Rounded-Elegance";
 /*------------------------*/
 
 .post-title {
   text-transform: uppercase;
-  font-family: "Rounded-Elegance";
+  font-family: $crossfader-font;
   color: $white;
 }
 
 .post-body {
   padding-left: 20px;
   padding-right: 20px;
-  font-family: sans-serif;
+  font-family: $roboto-sans;
   color: $white;
 }
 .post-username {
   padding-left: 20px;
   padding-right: 20px;
   text-transform: uppercase;
-  font-family: "Rounded-Elegance";
+  font-family: $crossfader-font;
   color: $white;
 }
 
@@ -40,7 +43,7 @@ color: $white;
 .comment-header,
 .comment-counter {
   text-transform: uppercase;
-  font-family: "Rounded-Elegance";
+  font-family: $crossfader-font;
   color: $white;
 }
 
