@@ -18,6 +18,8 @@ gem 'bootstrap_form'
 gem 'social-share-button', '~> 0.1.6'
 gem 'will_paginate', '~> 3.1.0'
 gem 'will_paginate-bootstrap'
+gem 'sprockets', '>= 3.0.0'
+gem 'sprockets-es6'
 
 group :development, :test do
   gem 'byebug', platform: :mri
