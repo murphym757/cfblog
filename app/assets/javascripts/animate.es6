@@ -1,12 +1,15 @@
-const themeChange = document.querySelector('div.logo-heading');
-const hoverTitle = document.querySelector('h1.post-title');
+const redTheme = document.querySelector('i.redmagic');
+const whiteTheme = document.querySelector('i.whitemagic');
+const blueTheme = document.querySelector('i.bluemagic');
 
-themeChange.addEventListener('click', () => {
-  document.body.style.backgroundColor = "#62BFE4";
+redTheme.addEventListener('click', () => {
+  document.body.style.backgroundColor = "#F16A5C";
 });
 
-hoverTitle.addEventListener('mouseover', () => {
-  document.body.style.backgroundColor = "#62BFE4";
+whiteTheme.addEventListener('click', () => {
+  document.body.style.backgroundColor = "#C7C3C0";
 });
 
- document.getElementById("demo").innerHTML = Date();
+blueTheme.addEventListener('click', () => {
+  document.body.style.backgroundColor = "#62BFE4";
+});
